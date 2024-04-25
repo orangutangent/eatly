@@ -7,6 +7,10 @@ import Input from "../Input";
 import GoogleButton from "../Auth/GoogleButton";
 import AppleButton from "../Auth/AppleButton";
 import Image from "next/image";
+import foodImage from "../../public/foodImage.png";
+import grapgImage from "../../public/graph.png";
+import Purchase from "../Purchase";
+import SideBody from "./SideBody";
 
 const LoginModal = () => {
   const loginModal = useLoginModal();
@@ -18,14 +22,7 @@ const LoginModal = () => {
       <button>Copyright 2022</button>
     </footer>
   );
-  const sideBody = (
-    <div>
-      <Image src={"/Vector.png"} alt="logo" width={10} height={10} />
-      <Image src={"/Vector-1.png"} alt="logo" width={10} height={10} />
-      <Image src={"/Vector-2.png"} alt="logo" width={10} height={10} />
-      <Image src={"/Vector-3.png"} alt="logo" width={10} height={10} />
-    </div>
-  );
+  const sideBody = <SideBody />;
   const body = (
     <div className="flex flex-col ">
       <div className="flex justify-between gap-[25px] ">
