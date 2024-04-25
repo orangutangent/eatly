@@ -56,12 +56,14 @@ const Menu: React.FC<Props> = ({ links }) => {
                   </Link>
                 </li>
               ))}
-              <li>
-                <LoginButton large />
-              </li>
-              <li>
-                <SignUpButton large />
-              </li>
+              <div className="sm:hidden">
+                <li>
+                  <LoginButton className="text-[35px]" large />
+                </li>
+                <li>
+                  <SignUpButton className="text-[35px]" large />
+                </li>
+              </div>
             </ul>
           </motion.div>
         )}
