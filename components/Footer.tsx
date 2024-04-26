@@ -51,7 +51,7 @@ const socialNetworks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-100 text-zinc-800 bottom-0 pt-20 pb-10 w-full">
+    <footer className="bg-zinc-100 text-zinc-800 bottom-0 mt-10 pt-20 pb-10 w-full">
       <div className="max-w-[1250px] mx-4 xl:mx-auto flex flex-col">
         <div className="w-full flex flex-col md:flex-row justify-between items-center gap-4 mb-[50px]">
           <Logo />

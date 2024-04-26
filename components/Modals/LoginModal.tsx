@@ -15,7 +15,6 @@ import SideBody from "./SideBody";
 const LoginModal = () => {
   const loginModal = useLoginModal();
   const signUpModal = useSignUpModal();
-  console.log(loginModal.isOpen);
   const footer = (
     <footer className="flex justify-between text-gray-500 font-[500] ">
       <button>Privacy Police</button>

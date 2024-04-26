@@ -1,15 +1,8 @@
-import Image from "next/image";
 import Menu from "./Menu";
-import { Poppins } from "next/font/google";
 import PullOutMenu from "./PullOutMenu";
 import LoginButton from "../Auth/LoginButton";
 import SignUpButton from "../Auth/SignUpButton";
 import Logo from "../Logo";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: "600",
-});
 
 export const links = [
   {
@@ -32,7 +25,7 @@ export const links = [
 
 const Header = () => {
   return (
-    <header className="fixed z-8 top-0 w-full bg-white">
+    <header className="fixed z-10 top-0 w-full bg-white">
       <div className="h-32 max-w-[1250px] mx-4 xl:mx-auto">
         <div className="flex items-center justify-between gap-4 my-8">
           <Logo />

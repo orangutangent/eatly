@@ -6,7 +6,7 @@ import Purchase from "../Purchase";
 const SideBody = () => {
   return (
     <div className="relative mt-14  h-full flex flex-col gap-4 ">
-      <div className="relative h-[500px] w-full">
+      <div className="relative h-[500px] w-[600px] mx-auto">
         <div className="absolute top-8 left-0 ">
           <svg
             width="528"

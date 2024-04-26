@@ -15,7 +15,6 @@ import SideBody from "./SideBody";
 const SignUpModal = () => {
   const loginModal = useLoginModal();
   const signUpModal = useSignUpModal();
-  console.log(loginModal.isOpen);
   const sideBody = <SideBody />;
   const footer = (
     <footer className="flex justify-between text-gray-500 font-[500] ">
