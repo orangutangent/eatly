@@ -4,17 +4,17 @@ import { useLoginModal } from "@/hooks/useLoginModal";
 
 interface Props {
   large?: boolean;
-  className?: string;
+  fontSize?: number;
 }
 
-const LoginButton: React.FC<Props> = ({ large = false, className }) => {
+const LoginButton: React.FC<Props> = ({ large = false, fontSize }) => {
   const loginModal = useLoginModal();
   const onLogin = () => {
     loginModal.setOpen();
   };
   return (
     <Button
-      className={className}
+      fontSize={fontSize}
       large={large}
       actionLabel="Log in"
       isSimple

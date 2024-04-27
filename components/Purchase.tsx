@@ -1,15 +1,15 @@
 import Image, { StaticImageData } from "next/image";
 
-interface Props {
+export type PurchaseType = {
   title: string;
   status: "On the way" | "Delivered" | "Cancelled";
   time: string;
   image: StaticImageData;
-}
+};
 
-const Purchase: React.FC<Props> = ({ title, status, time, image }) => {
+const Purchase: React.FC<PurchaseType> = ({ title, status, time, image }) => {
   return (
-    <div className="relative flex gap-6 p-2 rounded-2xl bg-white  shadow-lg">
+    <div className="relative  flex gap-6 p-2 rounded-2xl bg-white  shadow-lg">
       <div>
         <Image src={image} alt="image" width={65} />
       </div>

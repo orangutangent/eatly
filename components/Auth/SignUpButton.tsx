@@ -4,14 +4,14 @@ import { useSignUpModal } from "@/hooks/useSignUpModal";
 
 interface Props {
   large?: boolean;
-  className?: string;
+  fontSize?: number;
 }
 
-const SignUpButton: React.FC<Props> = ({ large = false, className }) => {
+const SignUpButton: React.FC<Props> = ({ large = false, fontSize }) => {
   const signUpModal = useSignUpModal();
   return (
     <Button
-      className={className}
+      fontSize={fontSize}
       large={large}
       actionLabel="Sign up"
       onClick={signUpModal.setOpen}
