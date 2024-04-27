@@ -58,10 +58,10 @@ const Menu: React.FC<Props> = ({ links }) => {
               ))}
               <div className="sm:hidden">
                 <li>
-                  <LoginButton className="text-[35px]" large />
+                  <LoginButton fontSize={35} large />
                 </li>
                 <li>
-                  <SignUpButton className="text-[35px]" large />
+                  <SignUpButton fontSize={35} large />
                 </li>
               </div>
             </ul>
